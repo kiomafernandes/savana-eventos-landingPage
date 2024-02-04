@@ -1,0 +1,102 @@
+@media(max-width: 1024px) {
+    .salons_grid {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .galery_grid {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 953px) {
+    .text {
+        width: 100%;
+    }
+
+    .line {
+        width: 100%;
+    }
+
+    .packages_lists {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .packages_itens {
+        margin: 1em 0;
+    }
+
+    .localization_text {
+        width: 100%;
+    }
+
+    .social h1 {
+        text-align: center;
+    }
+}
+
+@media(max-width: 760px) {
+
+    #normal_list {
+        display: none;
+    }
+    
+    #responsive {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 2em;
+    }
+
+    .contact_form {
+        width: 100%;
+    }
+
+    .form_input {
+        width: 100%;
+    }
+}
+
+@media(max-width: 651px) {
+    #normal_list {
+        display: none;
+    }
+    
+    #responsive {
+        display: flex;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .apresentacao_text h2 {
+        text-align: center;
+    }
+
+    .apresentacao_text p {
+        text-align: center;
+    }
+
+    .card_salons {
+        flex-direction: column;
+    }
+
+    .description {
+        width: 100%;
+        padding-left: 0;
+        border-left: none;
+        border-top: 1px solid #3f3ff8;
+    }
+
+}
