@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 
-*{
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
+
+/* Elementos padronizados */
+
 
 .blue {
     background-color: #3f3ff8;
@@ -22,27 +19,51 @@
     /* background-color: #fff; */
 }
 
-.btn {
-    padding: 0.5em 0.5em;
-    background-color: #3f3ff8;
+.btn,
+.btnInput {
+    width: 100%;
+    padding: 0.7em 1em;
+    background-color: #fff;
     border: none;
     border-radius: 5em;
     margin: 0.5em 0;
-    color: #fff;
+    color: #3f3ff8;
+    font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
     transition: 1s;
 }
 
-.btn:hover {
+.btn:hover, 
+.btnInput:hover {
     background-color: #9191f8;
 }
+
+
+
+/* .btnInput {
+    padding: 0.7em 1em;
+    background-color: #fff;
+    border: none;
+    border-radius: 5em;
+    margin: 1em 0;
+    color: #3f3ff8;
+    cursor: pointer;
+    transition: 1s;
+    font-weight: bold;
+}
+
+.btnInput:hover {
+    background-color: #9191f8;
+} */
 
 /* ---------------- Navbar ---------------- */
 
 header{
     display: flex;
     width: 100%;
-    background-color: #3f3ff8
+    background-color: #3f3ff8;
+    padding: 0.7rem 0;
 }
 
 .navbar {
@@ -66,6 +87,7 @@ header{
 
 .navbar_logo h1 a,
 .navbar_logo h1 span {
+    font-size: 2rem;
     font-family: 'Cedarville Cursive', cursive;
 }
 
@@ -87,7 +109,9 @@ header{
 }
 
 .navbar_links ul li {
+    font-size: 1.2rem;
     list-style: none;
+    font-weight: bold;
 }
 
 .navbar_links ul a {
@@ -112,9 +136,9 @@ header{
 .apresentacao{
     display: flex;
     width: 100%;
-    height: 70vh;
+    height: 87vh;
     /* margin: 0.5em 0; */
-    background-image: url(./images/salao-festa-capa.jpg);
+    background-image: url(../images/salao-festa-capa.jpg);
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover;
@@ -178,7 +202,7 @@ header{
     width: 100%;
     font-family: 'Cedarville Cursive', cursive;
     font-style: italic;
-    font-size: 2em;
+    font-size: 1.7em;
     text-align: center;
     margin: 0.35em 0;
 }
@@ -231,7 +255,8 @@ header{
 
 /* ------------sessão 3 ------------- */
 
-.salons {
+.salons,
+.salons_box {
     width: 100%;
     display: flex;
     align-items: center;
@@ -252,7 +277,8 @@ header{
     grid-template-columns: auto auto;
     column-gap: 2em;
     row-gap: 1em;
-    
+    align-items: center;
+    justify-content: center;
 }
 
 .card_salons {
@@ -322,15 +348,22 @@ header{
 
 .galery_grid {
     padding: 1.5em;
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 2em;
-    row-gap: 1em;
-
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .galery_grid img {
-    width:100%;
+    width:10%;
+    height: 80vh;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px  solid #fff;
+    transition: all ease-in-out 0.5s;
+}
+
+.galery_grid img:hover {
+    width: 50%;
 }
 
 .galery {
@@ -440,6 +473,18 @@ header{
     color: #3f3ff8;
 }
 
+#alert {
+    width: 30%;
+    text-align: center;
+    background-color: #df0303;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    margin: 0.5rem 0;
+    display: none;
+}
+
 .contact_form_container {
     width: 100%;
     display: flex;
@@ -455,47 +500,43 @@ header{
     justify-content: center;
     flex-direction: column;
     background-color: #6464ff;
-    padding: 2em;
+    padding: 1.5rem 2.5rem;
     border-radius: 15px;
     color: #fff;
     margin: 1.5em 0;
 }
 
-.contact_form h3 {
-    margin: 1em 0;
+.contact_form h1 {
+    /* margin: 1em 0; */
+    color: #fff;
 }
 
 .form_input {
-    width: 35em;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 0.5rem;
 }
 
 .form_input label {
-    margin: 0.5em 0;
+    margin: 1em 0;
+    padding: 0 0.5rem;
     font-weight: bold;
 }
 
 .form_input input{
     border: none;
-    border-radius: 3px;
-    height: 2em;
+    border-radius: 2rem;
+    padding: 0.7em;
+    font-size: 1rem;
 }
 
-.btnInput {
-    padding: 0.5em 0.9em;
-    background-color: #fff;
-    border: none;
-    border-radius: 5em;
-    margin: 1em 0;
-    color: #3f3ff8;
-    cursor: pointer;
-    transition: 1s;
-    font-weight: bold;
+.form_input input:focus {
+    outline:none;
 }
 
-.btnInput:hover {
-    background-color: #9191f8;
+.mt-adjust{
+    margin-top: 1.5rem;
 }
 
 .contact_additional {
@@ -518,9 +559,16 @@ header{
     margin: 1.5em 0;
 }
 
+.contact_form_message h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0.5rem 0;
+}
+
 .contact_form_message p {
     text-align: center;
     font-size: 1.5em;
+    margin: 0.5rem 0;
 }
 
 .localization {

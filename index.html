@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Styles -->
-    <link rel="stylesheet" href="./src/style.css">
-    <link rel="stylesheet" href="./src/responsive.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
 
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -18,7 +19,7 @@
 
     <title>Savana Eventos</title>
 </head>
-<body>
+<body id="body">
     <!-- Navbar -->
     <header>
         <nav class="navbar">
@@ -27,10 +28,10 @@
             </div>
            <div class="navbar_links">
                 <ul id="normal_list">
-                    <li><a href="#">Salões</a></li>
-                    <li><a href="#">Pacotes</a></li> 
-                    <li><a href="#">Sobre nós</a></li>
-                    <li><a href="#">Contatos</a></li>
+                    <li><a href="#salons">Salões</a></li>
+                    <li><a href="#packages">Pacotes</a></li> 
+                    <li><a href="#about">Sobre nós</a></li>
+                    <li><a href="#contact">Contatos</a></li>
                     
                 </ul>
 
@@ -87,95 +88,104 @@
    </section>
 
    <!-- Sesão 3 salões -->
-   <section class="salons">
+   <section id="salons" class="salons">
         <h1>Nossos Salões</h1>
         <div class="line white"></div>
-       <div class="salons_grid">
-            <div class="card_salons">
-                <div class="card_img">
-                    <img src="./src/images/salao1.jpg" alt="Salão 1">
+        <div class="salons_box">
+            <div class="salons_grid">
+                <div class="card_salons">
+                    <div class="card_img">
+                        <img src="./assets/images/salao1.jpg" alt="Salão 1">
+                    </div>
+                    <div class="description">
+                        <h2>Salão Tenda Rústica</h2>
+                        <p>Salão rustico com amplo espaço externo, muito procurado para casamentos e eventos empresariais.</p>
+                        <h4>Caracteristicas e disponibilidades</h4>
+                        <ul>
+                            <li><span>Área:</span> 100m² (+50m² de área externa)</li>
+                            <li><span>Capacidade:</span>  2mil a 7mil peassoas</li>
+                            <li><span>Disponibilidade:</span>  DJ, Oratorio, </li>
+                        </ul>
+                        <!-- <button class="btn">Ver galeria</button> -->
+                    </div>
                 </div>
-                <div class="description">
-                    <h2>Salão Tenda Rústica</h2>
-                    <p>Salão rustico com amplo espaço externo, muito procurado para casamentos e eventos empresariais.</p>
-                    <h4>Caracteristicas e disponibilidades</h4>
-                    <ul>
-                        <li><span>Área:</span> 100m² (+50m² de área externa)</li>
-                        <li><span>Capacidade:</span>  2mil a 7mil peassoas</li>
-                        <li><span>Disponibilidade:</span>  DJ, Oratorio, </li>
-                    </ul>
-                    <button class="btn">Ver galeria</button>
-                </div>
-            </div>
 
-            <div class="card_salons">
-                <div class="card_img">
-                    <img src="./src/images/salao2.jpg" alt="Salão 2">
+                <div class="card_salons">
+                    <div class="card_img">
+                        <img src="./assets/images/salao2.jpg" alt="Salão 2">
+                    </div>
+                    <div class="description">
+                        <h2>Salão Dance Plus</h2>
+                        <p>Salão moderno com amplo espaço interno e pista de dança. Muito procurado para aniversarios, casamentos</p>
+                        <h4>Caracteristicas e disponibilidades</h4>
+                        <ul>
+                            <li><span>Área:</span> 100m²</li>
+                            <li><span>Capacidade</span> 2mil a 5mil pessoas</li>
+                            <li><span>Disponibilidades</span> Pista de dança, DJ, sistema de som e luz, karaoke.</li>
+                        </ul>
+                        <!-- <button class="btn">Ver galeria</button> -->
+                    </div>
                 </div>
-                <div class="description">
-                    <h2>Salão Dance Plus</h2>
-                    <p>Salão moderno com amplo espaço interno e pista de dança. Muito procurado para aniversarios, casamentos</p>
-                    <h4>Caracteristicas e disponibilidades</h4>
-                    <ul>
-                        <li><span>Área:</span> 100m²</li>
-                        <li><span>Capacidade</span> 2mil a 5mil pessoas</li>
-                        <li><span>Disponibilidades</span> Pista de dança, DJ, sistema de som e luz, karaoke.</li>
-                    </ul>
-                    <button class="btn">Ver galeria</button>
-                </div>
-            </div>
 
-            <div class="card_salons">
-                <div class="card_img">
-                    <img src="./src/images/salao3.jpg" alt="Salão 3">
+                <div class="card_salons">
+                    <div class="card_img">
+                        <img src="./assets/images/salao3.jpg" alt="Salão 3">
+                    </div>
+                    <div class="description">
+                        <h2>Salão Tenda Árabe</h2>
+                        <p>Salão em tenda, moderno com amplo espaço externo e piscina. Muito procurado para aniversarios, encontros empresariais, casamentos</p>
+                        <h4>Caracteristicas e disponibilidades</h4>
+                        <ul>
+                            <li><span>Área:</span> 70m² (+ 25m² de área externa)</li>
+                            <li><span>Capacidade</span> 2mil a 4mil pessoas</li>
+                            <li><span>Disponibilidades</span> piscina, DJ, karaoke.</li>
+                        </ul>
+                        <!-- <button class="btn">Ver galeria</button> -->
+                    </div>
                 </div>
-                <div class="description">
-                    <h2>Salão Tenda Árabe</h2>
-                    <p>Salão em tenda, moderno com amplo espaço externo e piscina. Muito procurado para aniversarios, encontros empresariais, casamentos</p>
-                    <h4>Caracteristicas e disponibilidades</h4>
-                    <ul>
-                        <li><span>Área:</span> 70m² (+ 25m² de área externa)</li>
-                        <li><span>Capacidade</span> 2mil a 4mil pessoas</li>
-                        <li><span>Disponibilidades</span> piscina, DJ, karaoke.</li>
-                    </ul>
-                    <button class="btn">Ver galeria</button>
-                </div>
-            </div>
 
-            <div class="card_salons">
-                <div class="card_img">
-                    <img src="./src/images/salao4.jpg" alt="Salão 4">
+                <div class="card_salons">
+                    <div class="card_img">
+                        <img src="./assets/images/salao4.jpg" alt="Salão 4">
+                    </div>
+                    <div class="description">
+                        <h2>Salão Tenda Dance</h2>
+                        <p>Salão moderno com amplo espaço interno e pista de dança. Muito procurado para aniversarios, casamentos</p>
+                        <h4>Caracteristicas e disponibilidades</h4>
+                        <ul>
+                            <li><span>Área:</span> 70m²</li>
+                            <li><span>Capacidade</span> 2mil a 4mil pessoas</li>
+                            <li><span>Disponibilidades</span> Pista de dança, DJ, sistema de som e luz, karaoke.</li>
+                        </ul>
+                        <!-- <button type="button" class="btn">Ver galeria</button> -->
+                    </div>
                 </div>
-                <div class="description">
-                    <h2>Salão Tenda Dance</h2>
-                    <p>Salão moderno com amplo espaço interno e pista de dança. Muito procurado para aniversarios, casamentos</p>
-                    <h4>Caracteristicas e disponibilidades</h4>
-                    <ul>
-                        <li><span>Área:</span> 70m²</li>
-                        <li><span>Capacidade</span> 2mil a 4mil pessoas</li>
-                        <li><span>Disponibilidades</span> Pista de dança, DJ, sistema de som e luz, karaoke.</li>
-                    </ul>
-                    <button class="btn">Ver galeria</button>
-                </div>
-            </div>
-       </div>
+
+            
+           </div>
+           <button onclick= galeryView() type="submit" id="btn" class="btn">Ver galeria</button>
+        </div>
+       
+
+       
 
        <div class="galery">
             <div class="galery_grid">
-                <img src="./src/images/salao1.jpg" alt="Salão 1">
-                <img src="./src/images/salao2.jpg" alt="Salão 2">
-                <img src="./src/images/salao3.jpg" alt="Salão 3">
-                <img src="./src/images/salao4.jpg" alt="Salão 4">
+                <img src="./assets/images/salao1.jpg" alt="Salão 1">
+                <img src="./assets/images/salao2.jpg" alt="Salão 2">
+                <img src="./assets/images/salao3.jpg" alt="Salão 3">
+                <img src="./assets/images/salao4.jpg" alt="Salão 4">
             </div>
-            <button class="btnInput">Voltar</button>
+            <button onclick=salonsInfoView() type="submit" class="btnInput">Voltar</button>
         </div>
+
 
        <div class="line white"></div>
    </section>
 
    <!-- Sessão 4 Pacotes -->
 
-   <section class="packages">
+   <section id="packages" class="packages">
 
         <h1>Nossos Pacotes</h1>
         <div class="line blue"></div>
@@ -253,7 +263,7 @@
 
     <!-- Sessão 5 sobre nos -->
 
-    <section class="about">
+    <section id="about" class="about">
 
         <h1>Quem somos</h1>
         <div class="line white"></div>
@@ -270,32 +280,35 @@
 
     <!-- Sesão 5 contatos -->
 
-    <section class="contact">
+    <section id="contact" class="contact">
 
         <h1>Fale conosco</h1>
+        <p id="alert">Prencha os campos vázios obrigatórios!</p>
         <div class="line blue"></div>
 
         <div class="contact_form_container">
             <form class="contact_form">
-                <h3>Agende uma visita</h3>
+                <h1>Agende uma visita</h1>
                 <div class="form_input">
                     <label for="name">Nome</label>
-                    <input type="text" name="name" placeholder="Digite seu nome">
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome" required>
                 </div>
 
                 <div class="form_input">
                     <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="Digite seu e-mail">
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
                 </div>
 
                 <div class="form_input">
                     <label for="tel">Telefone</label>
-                    <input type="tel" name="tel" placeholder="Digite seu telefone">
+                    <input type="tel" name="tel" id="tel" placeholder="Digite seu telefone" required>
                 </div>
-                <button class="btnInput">Enviar</button>
+                <button onclick=sendContact() type="submit" class="btnInput mt-adjust">Enviar</button>
             </form>
+
             <div class="contact_form_message">
-                <p>Dados enviados com sucesso.</p>
+                <h2>Olá <span id="contactName"></span>!</h2>
+                <p>Ficamos felizes em nos procurar, em breve entraremos em contato com você!</p>
             </div>
 
             <div class="contact_additional">
@@ -343,12 +356,12 @@
         </div>
 
     </section>
+    <footer>
+        <div class="footer">
+            <p> &copy 2024 <a href="#">Savana Eventos</a> </p>
+        </div>
+    </footer>
 
-    <script src="./src/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
-<footer>
-    <div class="footer">
-        <p> &copy 2024 <a href="#">Savana Eventos</a> </p>
-    </div>
-</footer>
 </html>
